@@ -1,0 +1,808 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/*header start*/
+li,
+a,
+ion-icon {
+  text-decoration: none;
+}
+header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+#logo {
+  margin: 0 25px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links ul {
+  display: flex;
+}
+.nav_links ul li {
+  display: inline-block;
+  padding: 10px 30px;
+  text-align: left;
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+}
+.nav_links ul li a {
+  color: #000;
+  transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+  text-decoration: underline;
+}
+/*pria start*/
+.kategoriPria {
+  display: none;
+  z-index: 999;
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav_links ul li:hover .kategoriPria {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+}
+.nav_links ul li:hover .kategoriPria ul {
+  display: block;
+  margin: 10px;
+}
+.nav_links ul li:hover .kategoriPria ul li {
+  width: 150px;
+  margin: 0 -30px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.KPFeatured {
+  display: none;
+  z-index: 999;
+}
+.kategoriPria ul li:hover .KPFeatured {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KPSepatu {
+  display: none;
+  z-index: 999;
+}
+.kategoriPria ul li:hover .KPSepatu {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KPPakaian {
+  display: none;
+  z-index: 999;
+}
+.kategoriPria ul li:hover .KPPakaian {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KPAksesoris {
+  display: none;
+  z-index: 999;
+}
+.kategoriPria ul li:hover .KPAksesoris {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KPOlahraga {
+  display: none;
+  z-index: 999;
+}
+.kategoriPria ul li:hover .KPOlahraga {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+/*pria end*/
+/*wanita start*/
+.kategoriWanita {
+  display: none;
+  z-index: 999;
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav_links ul li:hover .kategoriWanita {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+}
+.nav_links ul li:hover .kategoriWanita ul {
+  display: block;
+  margin: 10px;
+}
+.nav_links ul li:hover .kategoriWanita ul li {
+  width: 150px;
+  margin: 0 -30px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.KWFeatured {
+  display: none;
+  z-index: 999;
+}
+.kategoriWanita ul li:hover .KWFeatured {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KWSepatu {
+  display: none;
+  z-index: 999;
+}
+.kategoriWanita ul li:hover .KWSepatu {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KWPakaian {
+  display: none;
+  z-index: 999;
+}
+.kategoriWanita ul li:hover .KWPakaian {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KWAksesoris {
+  display: none;
+  z-index: 999;
+}
+.kategoriWanita ul li:hover .KWAksesoris {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KWOlahraga {
+  display: none;
+  z-index: 999;
+}
+.kategoriWanita ul li:hover .KWOlahraga {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+/*wanita end*/
+/*olahraga start*/
+.kategoriOlahraga {
+  display: none;
+  z-index: 999;
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav_links ul li:hover .kategoriOlahraga {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+}
+.nav_links ul li:hover .kategoriOlahraga ul {
+  display: block;
+  margin: 10px;
+}
+.nav_links ul li:hover .kategoriOlahraga ul li {
+  width: 150px;
+  margin: 0 -30px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.KORunning {
+  display: none;
+  z-index: 999;
+}
+.kategoriOlahraga ul li:hover .KORunning {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KOTraining {
+  display: none;
+  z-index: 999;
+}
+.kategoriOlahraga ul li:hover .KOTraining {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KOSepakBola {
+  display: none;
+  z-index: 999;
+}
+.kategoriOlahraga ul li:hover .KOSepakBola {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KOBasket {
+  display: none;
+  z-index: 999;
+}
+.kategoriOlahraga ul li:hover .KOBasket {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KOOlahragaLain {
+  display: none;
+  z-index: 999;
+}
+.kategoriOlahraga ul li:hover .KOOlahragaLain {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+/*olahraga end*/
+/*menu start*/
+.menuBar {
+  padding: 0;
+  margin: 0 30px;
+  box-sizing: border-box;
+  background: white;
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+.menuBar ul {
+  list-style: none;
+  display: flex;
+}
+.menuBar ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+.menuBar ul li a {
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+.menuBar ul li a:hover {
+  text-decoration: underline;
+}
+.menuDropdown {
+  display: none;
+  height: 50px;
+  width: 50px;
+  margin: -10px;
+  padding: 0;
+}
+.menuBar ul li:hover .menuDropdown {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+.menuBar ul li:hover .menuDropdown ul {
+  display: block;
+  margin: 0 -50px;
+}
+.menuBar ul li:hover .menuDropdown ul li {
+  margin: 0 20px;
+  width: 50px;
+  background: #fff;
+}
+.menuBar ul li:hover .menuDropdown ul li:hover {
+  width: 50px;
+  background: #d9d9d9;
+}
+ion-icon {
+  width: 40px;
+  height: 40px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+/*menu end*/
+/*header end*/
+/*search box start*/
+.boxContainer {
+  margin: auto;
+  margin-top: 25px;
+  position: relative;
+  width: 500px;
+  height: 50px;
+  border: 3px solid #000;
+  padding: 0px 10px;
+  align-items: center;
+}
+.elementContainer {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.cari {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0%;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500px;
+}
+.cari:focus {
+  outline: none;
+}
+.logoCari {
+  margin-right: -15px;
+  width: 25px;
+  height: 25px;
+  color: black;
+}
+/*search box end*/
+/*slider banner start*/
+.slider {
+  margin: 25px 0;
+  width: 100%;
+  overflow: hidden;
+}
+.slides {
+  width: 500%;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 20%;
+  transition: 2s;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.navigationManual {
+  position: absolute;
+  width: 100%;
+  margin-top: -1.8%;
+  display: flex;
+  justify-content: center;
+}
+.manualBtn {
+  border: 2px solid #ffd700;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manualBtn:not(:last-child) {
+  margin-right: 25px;
+}
+.manualBtn:hover {
+  background: #ffd700;
+}
+#radio1:checked ~ .pertama {
+  margin-left: 0;
+}
+#radio2:checked ~ .pertama {
+  margin-left: -20%;
+}
+#radio3:checked ~ .pertama {
+  margin-left: -40%;
+}
+.navigationAuto {
+  position: absolute;
+  width: 100%;
+  margin-top: 35%;
+  display: flex;
+  justify-content: center;
+}
+.navigationAuto div {
+  border: 2px solid #ffd700;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.navigationAuto div:not(:last-child) {
+  margin-right: 25px;
+}
+#radio1:checked ~ .navigationAuto .autoBtn1 {
+  background: #ffd700;
+}
+#radio2:checked ~ .navigationAuto .autoBtn2 {
+  background: #ffd700;
+}
+#radio3:checked ~ .navigationAuto .autoBtn3 {
+  background: #ffd700;
+}
+/*slider banner end*/
+/*banner text start*/
+.bannerText {
+  position: absolute;
+  left: 50px;
+  transform: translateY(-175%);
+  color: #fff;
+}
+.bannerText h4 {
+  font-size: 250%;
+  margin: 5% 0;
+  font-weight: 1000;
+}
+.bannerText p {
+  font-size: 100%;
+  margin: 5% 0;
+  font-weight: 500;
+}
+/*banner text end*/
+/*box banner start*/
+.boxBeliBannerP {
+  display: inline-block;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.boxBeliBannerP i {
+  margin-left: 10px;
+}
+.fas fa-arrow-right:before {
+  content: "\f061";
+  font-family: "FontAwesome";
+}
+.boxBeliBannerH {
+  display: inline-block;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.boxBeliBannerH i {
+  margin-left: 10px;
+}
+.fas fa-arrow-right:before {
+  content: "\f061";
+  font-family: "FontAwesome";
+}
+/*box banner end*/
+/*card start*/
+.bussin {
+  text-transform: uppercase;
+  margin: 25px 50px;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 35px;
+}
+.bussin span {
+  font-weight: 900;
+}
+.card1 {
+  display: flex;
+  margin: 0 50px;
+  justify-content: space-around;
+  gap: 2.5%;
+}
+.card2 {
+  display: flex;
+  margin: 25px 50px;
+  margin-bottom: 50px;
+  justify-content: space-around;
+  gap: 2.5%;
+}
+.cardRow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cardImage {
+  background: white;
+  position: relative;
+  flex: 1;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.cardImage img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: top;
+  transition: 0.5s;
+  transition-property: transform;
+}
+.cardImage:hover img {
+  transform: scale(1.1) rotate(-3deg);
+}
+.cardImage .cardDetails {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cardImage .cardDetails h2 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 25%;
+  opacity: 1;
+  transition: 0.5s;
+  transition-property: opacity;
+}
+.cardImage .cardDetails h2 span {
+  font-weight: 900;
+}
+.cardImage:hover .cardDetails h2 {
+  opacity: 0;
+}
+.cardImage .cardDetails p {
+  margin: 30px 30px 0 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+  transition-property: opacity, transform;
+}
+.cardImage:hover .cardDetails p {
+  opacity: 1;
+  transform: translateY(-125%);
+  font-size: 25px;
+}
+.cardMore {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  bottom: -60px;
+  transition: 0.5s;
+  transition-property: bottom;
+}
+.cardImage:hover .cardMore {
+  bottom: 0;
+}
+.cardMore .cardBeli {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.cardMore .cardBeli span {
+  font-weight: 900;
+}
+@media (max-width: 1080px) {
+  .cardImage {
+    flex: 100%;
+    max-width: 480px;
+  }
+}
+@media (max-width: 400px) {
+  .cardImage .cardDetails p {
+    font-size: 16px;
+  }
+  .cardMore .cardBeli a i {
+    font-size: 18px;
+  }
+}
+/*card end*/
+/*gender start*/
+.section-p1 {
+  padding: 50px;
+}
+#sm-gender .gender-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("/images/pria.png");
+  width: 49%;
+  min-width: 100px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin: -50px 0;
+}
+#sm-gender .gender-box2 {
+  background-image: url("/images/wanita.png");
+}
+#sm-gender {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#sm-gender h2 {
+  padding: 0 30px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800px;
+  margin: -35px 0;
+}
+#sm-gender span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500px;
+  padding: 30px;
+  padding-bottom: 15px;
+}
+button.gender {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.2s;
+  margin: 0 30px;
+}
+#sm-gender .gender-box:hover button {
+  background: #fff;
+  color: #000;
+}
+/*gender end*/
+/*contact start*/
+.section-m1 {
+  margin: 50px 0;
+}
+#kontak {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("/images/kontak.png");
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+#kontak h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.2s;
+}
+#kontak button:hover {
+  background: #fff;
+  color: #000;
+}
+/*contact end*/
+/* footer start */
+footer {
+  background: black;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+  transform: translateX(-1%);
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background: white;
+  margin: 10px;
+  border-radius: 25%;
+}
+.socialIcons a i {
+  font-size: 1.5em;
+  color: #000;
+}
+.socialIcons a:hover {
+  background: #000;
+  transition: 0.5s;
+}
+.socialIcons a:hover i {
+  color: #fff;
+  transition: 0.5s;
+}
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.footerNav ul li a {
+  color: #fff;
+  margin: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+.footerBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p {
+  color: #fff;
+}
+/* footer end */

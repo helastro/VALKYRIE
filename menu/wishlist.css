@@ -1,0 +1,465 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+/*header start*/
+li,
+a,
+ion-icon {
+  text-decoration: none;
+}
+header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+#logo {
+  margin: 0 25px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links ul {
+  display: flex;
+}
+.nav_links ul li {
+  display: inline-block;
+  padding: 10px 30px;
+  text-align: left;
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+}
+.nav_links ul li a {
+  color: #000;
+  transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+  text-decoration: underline;
+}
+/*pria start*/
+.kategoriPria {
+  display: none;
+  z-index: 999;
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav_links ul li:hover .kategoriPria {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+}
+.nav_links ul li:hover .kategoriPria ul {
+  display: block;
+  margin: 10px;
+}
+.nav_links ul li:hover .kategoriPria ul li {
+  width: 150px;
+  margin: 0 -30px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.KPFeatured {
+  display: none;
+  z-index: 999;
+}
+.kategoriPria ul li:hover .KPFeatured {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KPSepatu {
+  display: none;
+  z-index: 999;
+}
+.kategoriPria ul li:hover .KPSepatu {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KPPakaian {
+  display: none;
+  z-index: 999;
+}
+.kategoriPria ul li:hover .KPPakaian {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KPAksesoris {
+  display: none;
+  z-index: 999;
+}
+.kategoriPria ul li:hover .KPAksesoris {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KPOlahraga {
+  display: none;
+  z-index: 999;
+}
+.kategoriPria ul li:hover .KPOlahraga {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+/*pria end*/
+/*wanita start*/
+.kategoriWanita {
+  display: none;
+  z-index: 999;
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav_links ul li:hover .kategoriWanita {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+}
+.nav_links ul li:hover .kategoriWanita ul {
+  display: block;
+  margin: 10px;
+}
+.nav_links ul li:hover .kategoriWanita ul li {
+  width: 150px;
+  margin: 0 -30px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.KWFeatured {
+  display: none;
+  z-index: 999;
+}
+.kategoriWanita ul li:hover .KWFeatured {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KWSepatu {
+  display: none;
+  z-index: 999;
+}
+.kategoriWanita ul li:hover .KWSepatu {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KWPakaian {
+  display: none;
+  z-index: 999;
+}
+.kategoriWanita ul li:hover .KWPakaian {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KWAksesoris {
+  display: none;
+  z-index: 999;
+}
+.kategoriWanita ul li:hover .KWAksesoris {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KWOlahraga {
+  display: none;
+  z-index: 999;
+}
+.kategoriWanita ul li:hover .KWOlahraga {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+/*wanita end*/
+/*olahraga start*/
+.kategoriOlahraga {
+  display: none;
+  z-index: 999;
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav_links ul li:hover .kategoriOlahraga {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+}
+.nav_links ul li:hover .kategoriOlahraga ul {
+  display: block;
+  margin: 10px;
+}
+.nav_links ul li:hover .kategoriOlahraga ul li {
+  width: 150px;
+  margin: 0 -30px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.KORunning {
+  display: none;
+  z-index: 999;
+}
+.kategoriOlahraga ul li:hover .KORunning {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KOTraining {
+  display: none;
+  z-index: 999;
+}
+.kategoriOlahraga ul li:hover .KOTraining {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KOSepakBola {
+  display: none;
+  z-index: 999;
+}
+.kategoriOlahraga ul li:hover .KOSepakBola {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KOBasket {
+  display: none;
+  z-index: 999;
+}
+.kategoriOlahraga ul li:hover .KOBasket {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+.KOOlahragaLain {
+  display: none;
+  z-index: 999;
+}
+.kategoriOlahraga ul li:hover .KOOlahragaLain {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: white;
+}
+/*olahraga end*/
+/*menu start*/
+.menuBar {
+  padding: 0;
+  margin: 0 30px;
+  box-sizing: border-box;
+  background: white;
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+.menuBar ul {
+  list-style: none;
+  display: flex;
+}
+.menuBar ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+.menuBar ul li a {
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+.menuBar ul li a:hover {
+  text-decoration: underline;
+}
+.menuDropdown {
+  display: none;
+  height: 50px;
+  width: 50px;
+  margin: -10px;
+  padding: 0;
+}
+.menuBar ul li:hover .menuDropdown {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+.menuBar ul li:hover .menuDropdown ul {
+  display: block;
+  margin: 0 -50px;
+}
+.menuBar ul li:hover .menuDropdown ul li {
+  margin: 0 20px;
+  width: 50px;
+  background: #fff;
+}
+.menuBar ul li:hover .menuDropdown ul li:hover {
+  width: 50px;
+  background: #d9d9d9;
+}
+ion-icon {
+  width: 40px;
+  height: 40px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+/*menu end*/
+/*header end*/
+/* product start */
+.judul {
+  color: #000;
+  font-size: x-large;
+  margin: -25px 50px;
+  margin-top: 25px;
+}
+.section-p1 {
+  margin: 0 50px;
+  margin-bottom: 50px;
+}
+#product1 {
+  text-align: center;
+}
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  cursor: pointer;
+  position: relative;
+}
+#product1 .pro img {
+  width: 100%;
+}
+#product1 .pro .des {
+  text-align: start;
+}
+#product1 .pro .des span {
+  font-size: 12px;
+  font-weight: lighter;
+}
+#product1 .pro .des h5 {
+  margin: 5px 0;
+  font-size: 15px;
+}
+#product1 .pro .des h4 {
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+/* product end */
+/* footer start */
+footer {
+  background: black;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+  transform: translateX(-1%);
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background: white;
+  margin: 10px;
+  border-radius: 25%;
+}
+.socialIcons a i {
+  font-size: 1.5em;
+  color: #000;
+}
+.socialIcons a:hover {
+  background: #000;
+  transition: 0.5s;
+}
+.socialIcons a:hover i {
+  color: #fff;
+  transition: 0.5s;
+}
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.footerNav ul li a {
+  color: #fff;
+  margin: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+.footerBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p {
+  color: #fff;
+}
+/* footer end */

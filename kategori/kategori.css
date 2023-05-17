@@ -411,6 +411,10 @@ ion-icon {
   font-size: 13px;
   font-weight: 500;
 }
+#product1 .pro .des h4 span {
+  text-decoration: line-through;
+  color: red;
+}
 /* product end */
 /* footer start */
 footer {

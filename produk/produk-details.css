@@ -139,75 +139,76 @@ ion-icon {
 }
 /*menu end*/
 /*header end*/
-/* details start */
-.judul {
-  text-align: left;
-  color: #000;
-  font-size: x-large;
-  margin: -25px 50px;
-  margin-top: 25px;
-}
-.cart-page {
+/* produk details start */
+.section-p1 {
   margin: 0 50px;
   margin-bottom: 50px;
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.cart-info {
+#prodetails {
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 50px;
 }
-th {
-  text-align: left;
-  padding: 5px;
-  color: #fff;
-  background: #000;
-  font-weight: normal;
+#prodetails .single-pro-image {
+  width: 40%;
+  margin-right: 50px;
 }
-td {
-  padding: 10px 5px;
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
 }
-td input {
-  width: 40px;
-  height: 30px;
-  padding: 5px;
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
 }
-td p {
-  font-weight: bold;
+#prodetails .single-pro-details {
+  width: 50%;
 }
-td small {
+#prodetails .single-pro-details h6 {
+  font-weight: 400;
+}
+#prodetails .single-pro-details h4 {
+  margin: 25px 0;
+}
+#prodetails .single-pro-details #harga {
+  margin: 25px 0;
+  font-weight: 500;
+}
+#prodetails .single-pro-details h2 {
+  font-size: 25px;
+}
+#prodetails .single-pro-details h1 {
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 500;
+  margin: -25px 0;
+}
+#prodetails .single-pro-details select {
   display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
 }
-td a {
-  color: #000;
-  font-weight: 12px;
-}
-td a:hover {
-  text-decoration: underline;
-}
-td img {
-  width: 250px;
-  height: 250px;
+#prodetails .single-pro-details input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
   margin-right: 10px;
 }
-.total-price {
-  display: flex;
-  justify-content: flex-end;
+#prodetails .single-pro-details input:focus {
+  outline: none;
 }
-.total-price table {
-  border-top: 3px solid #000;
-  width: 100%;
-  max-width: 470px;
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.2s;
 }
-td:last-child {
-  text-align: right;
-}
-th:last-child {
-  text-align: right;
-}
-/* details end */
+/* produk details end */
 /* footer start */
 footer {
   background: black;

@@ -163,14 +163,11 @@ ion-icon {
   font-size: 12px;
 }
 #contact-details .details h2 {
-  font-size: 35px;
+  font-size: 25px;
   line-height: 35px;
-  font-style: italic;
-  font-weight: 700;
 }
 #contact-details .details h3 {
   font-size: 15px;
-  font-weight: 600;
 }
 #contact-details .details li {
   list-style: none;
@@ -192,38 +189,6 @@ ion-icon {
 #contact-details .map iframe {
   width: 100%;
   height: 100%;
-}
-.tombol-lokasi {
-  margin: 25px 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-button.normal {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 15px 75px;
-  color: #000;
-  background: #fff;
-  cursor: pointer;
-  border: 1px solid #000;
-  outline: none;
-  transition: 0.2s;
-}
-.tombol-lokasi button:hover {
-  background: #000;
-  color: #fff;
-}
-button.aktif {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 15px 75px;
-  color: #fff;
-  background: #000;
-  cursor: pointer;
-  border: 1px solid #000;
-  outline: none;
-  transition: 0.2s;
 }
 /* map end */
 /* footer start */

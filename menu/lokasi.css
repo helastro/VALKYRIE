@@ -215,15 +215,8 @@ button.normal {
   color: #fff;
 }
 button.aktif {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 15px 75px;
   color: #fff;
   background: #000;
-  cursor: pointer;
-  border: 1px solid #000;
-  outline: none;
-  transition: 0.2s;
 }
 /* map end */
 /* footer start */

@@ -18,7 +18,32 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <body>
     <div class="hero">
-      <div class="form-box"></div>
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="masuk()">Masuk</button>
+          <button type="button" class="toggle-btn" onclick="daftar()">Daftar</button>
+        </div>
+        <div class="social-icons">
+          <img src="/images/facebook.png" alt="" />
+          <img src="/images/google.png" alt="" />
+        </div>
+        <form id="masuk" class="input-group">
+          <input type="email" class="input-field" placeholder="Email" required />
+          <input type="password" class="input-field" placeholder="Password" required />
+          <input type="checkbox" class="check-box" /><span>Ingat saya</span>
+          <button type="submit" class="submit-btn">Masuk</button>
+        </form>
+        <form id="daftar" class="input-group">
+          <input type="email" class="input-field" placeholder="Email" required />
+          <input type="password" class="input-field" placeholder="Password" required />
+          <input type="checkbox" class="check-box" /><span
+            >Saya setuju dengan <a href="/footer/term-of-use.html">Syarat dan Ketentuan, dan <a href="/footer/privacy-policy.html"> Catatan Privasi</a></a></span
+          >
+          <button type="submit" class="submit-btn">Daftar</button>
+        </form>
+      </div>
     </div>
+    <script src="/main/masuk.js"></script>
   </body>
 </html>

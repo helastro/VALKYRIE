@@ -207,6 +207,26 @@ td:last-child {
 th:last-child {
   text-align: right;
 }
+.tombol {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 190px;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid #000;
+  outline: none;
+  transition: 0.2s;
+}
+.tombol button:hover {
+  color: #fff;
+  background: #000;
+}
 /* details end */
 /* footer start */
 footer {

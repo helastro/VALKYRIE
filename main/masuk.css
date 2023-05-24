@@ -75,16 +75,26 @@
 .input-field:focus {
   outline: none;
 }
+#lupa {
+  right: 0px;
+  margin: 5px 0;
+  margin-bottom: 0;
+}
 .submit-btn {
   width: 85%;
   padding: 10px 30px;
   cursor: pointer;
   display: block;
   margin: auto;
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+  transition: 0.2s;
+}
+.submit-btn:hover {
   color: #fff;
   background: #000;
-  border: 0;
-  outline: none;
+  border: 1px solid #fff;
 }
 .check-box {
   margin: 30px 10px 30px 0;

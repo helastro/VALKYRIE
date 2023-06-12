@@ -211,6 +211,9 @@ button.normal {
   transition: 0.2s;
   font-weight: 500;
 }
+#wa{
+  color: #fff;
+}
 button i {
   font-size: 20px;
 }
